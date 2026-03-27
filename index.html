@@ -12,11 +12,9 @@
 
 <link rel="canonical" href="https://59t.io/">
 
-<!-- أيقونات محلية -->
 <link rel="icon" href="/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-<!-- Open Graph / Social Media -->
 <meta property="og:title" content="متجر منتجات رقمية | كتب إلكترونية وقوالب وأدوات إنتاجية - 59t.io">
 <meta property="og:description" content="كتب إلكترونية، خلاصات كتب، قوالب، أدوات إنتاجية ونماذج ATS - منتجات رقمية عملية للاستخدام الفوري.">
 <meta property="og:image" content="https://59t.io/images/og-image.png">
@@ -25,7 +23,6 @@
 <meta property="og:locale" content="ar_AR">
 <meta property="og:site_name" content="59t.io | متجر منتجات رقمية">
 
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="متجر منتجات رقمية | كتب إلكترونية وقوالب وأدوات إنتاجية - 59t.io">
 <meta name="twitter:description" content="كتب إلكترونية، خلاصات كتب، قوالب جاهزة، أدوات إنتاجية، ونماذج ATS - منتجات رقمية عملية للاستخدام الفوري.">
@@ -56,6 +53,27 @@ body{
   background:#020617;
   color:#e5e7eb;
   text-align:center;
+  position: relative;
+}
+/* زر تبديل اللغة */
+.lang-switch {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 18px;
+  background: #0f172a;
+  color: #d4af37;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 1px solid #d4af37;
+  transition: 0.3s;
+  z-index: 100;
+}
+.lang-switch:hover {
+  background: #d4af37;
+  color: #000;
 }
 .hero-img{
   width:100%;
@@ -97,6 +115,8 @@ p{
 }
 ul{
   line-height:1.9;
+  display: inline-block;
+  text-align: right;
 }
 .social-list{
   list-style:none;
@@ -127,13 +147,23 @@ footer{
   margin-top:30px;
   color:#777;
 }
+
+/* تحسين للهواتف */
+@media (max-width: 600px) {
+  .lang-switch {
+    top: 15px;
+    left: 15px;
+    padding: 6px 12px;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<!-- تم إزالة loading="lazy" لأنها صورة LCP -->
-<img class="hero-img" src="/images/logo.png" alt="شعار متجر 59t.io للمنتجات الرقمية - كتب إلكترونية وقوالب وأدوات إنتاجية">
+<a href="/en.html" class="lang-switch">English</a>
+
+<img class="hero-img" src="/images/logo.png" alt="شعار متجر 59t.io للمنتجات الرقمية">
 
 <main>
 
@@ -174,41 +204,11 @@ footer{
 
 <ul class="social-list">
 
-<li>
-<a class="social-link" href="https://instagram.com/59t.io" target="_blank" rel="noopener noreferrer">
-<span class="icon">IG</span> Instagram
-</a>
-</li>
-
-<li>
-<a class="social-link" href="https://tiktok.com/@59t.io" target="_blank" rel="noopener noreferrer">
-<span class="icon">TT</span> TikTok
-</a>
-</li>
-
-<li>
-<a class="social-link" href="https://threads.net/@59t.io" target="_blank" rel="noopener noreferrer">
-<span class="icon">TH</span> Threads
-</a>
-</li>
-
-<li>
-<a class="social-link" href="https://share.upscrolled.com/ar/post/7de269e0-273b-11f1-8080-8001744431ac/" target="_blank" rel="noopener noreferrer">
-<span class="icon">UP</span> Upscrolled
-</a>
-</li>
-
-<li>
-<a class="social-link" href="https://x.com/59t_io" target="_blank" rel="noopener noreferrer">
-<span class="icon">X</span> X
-</a>
-</li>
-
-<li>
-<a class="social-link" href="https://youtube.com/@59t_io" target="_blank" rel="noopener noreferrer">
-<span class="icon">YT</span> YouTube
-</a>
-</li>
+<li><a class="social-link" href="https://instagram.com/59t.io" target="_blank" rel="noopener noreferrer"><span class="icon">IG</span> Instagram</a></li>
+<li><a class="social-link" href="https://tiktok.com/@59t.io" target="_blank" rel="noopener noreferrer"><span class="icon">TT</span> TikTok</a></li>
+<li><a class="social-link" href="https://threads.net/@59t.io" target="_blank" rel="noopener noreferrer"><span class="icon">TH</span> Threads</a></li>
+<li><a class="social-link" href="https://x.com/59t_io" target="_blank" rel="noopener noreferrer"><span class="icon">X</span> X</a></li>
+<li><a class="social-link" href="https://youtube.com/@59t_io" target="_blank" rel="noopener noreferrer"><span class="icon">YT</span> YouTube</a></li>
 
 </ul>
 
